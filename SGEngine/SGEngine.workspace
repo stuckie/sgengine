@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Workspace Name="SGEngine" Database="./SGEngine.tags">
+  <Project Name="Engine" Path="Engine/Engine.project" Active="Yes"/>
+  <Project Name="SGELuaSDLRender" Path="../SGERENDER/SGELuaSDLRender/SGELuaSDLRender.project" Active="No"/>
+  <Project Name="SGELuaCore" Path="../SGECORE/SGELuaCore/SGELuaCore.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="no">
+      <Project Name="Engine" ConfigName="Debug"/>
+      <Project Name="SGELuaSDLRender" ConfigName="Debug"/>
+      <Project Name="SGELuaCore" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="Engine" ConfigName="Release"/>
+      <Project Name="SGELuaSDLRender" ConfigName="Release"/>
+      <Project Name="SGELuaCore" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

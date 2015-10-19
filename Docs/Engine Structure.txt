@@ -1,0 +1,14 @@
+Logic Scripts > Engine Kernel + Core > Library Modules.
+
+Logic Scripts drive everything and are reliant upon the combination of the Engine Kernel and a Core.
+The Core defines the Script Interpretor - Lua, Python, whatever.
+Library Modules rely on a Core being loaded, and can check the type and version number during their bootstrap to decide whether they can, or will, bind.
+
+All Core Modules must derive from SGECORE.
+All Library Modules must derive from SGELIB, and take an SGECORE during their bootstrap.
+
+Modules may support multiple COREs if they wish, but must do their checking in the bootstrap, and bind as appropriate.
+Yes, this involves static casting to the correct CORE, and therefore a dependency is formed upon that version of the CORE.
+This is why there's version and name checking available to ensure you have the right one!
+
+Modules may do whatever they want in C/C++ and bind whatever they want to script.

@@ -1,0 +1,4 @@
+SGELuaSDLRender
+
+The SGE Lua SDL Render Module ( bit of a mouthful that ) binds SDL Rendering capabilities to Lua.
+This depends upon SGELuaCore v.100 and Lua 5.1

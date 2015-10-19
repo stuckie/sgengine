@@ -1,0 +1,6 @@
+SGELuaCore
+
+The SGELuaCore creates and manages a standard Lua State for binding modules to Lua.
+This CORE does not really do much else other than loads and runs the main script, and provide modules access to the Lua State.
+
+This CORE depends on Lua 5.1
